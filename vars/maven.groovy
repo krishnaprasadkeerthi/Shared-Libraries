@@ -5,3 +5,7 @@ def mavenTest(){
 def mavenInstall(){
   sh 'mvn install'
 }
+
+def mavenCleanInstall(){
+  sh 'mvn clean install'
+}
