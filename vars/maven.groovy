@@ -1,3 +1,8 @@
+def mavenClean(){
+   sh 'mvn clean'
+}
+
+
 def mavenTest(){
    sh 'mvn clean test'
 }
