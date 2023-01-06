@@ -10,19 +10,19 @@ def nexus(String artifactId, String classifier, String file, String type, String
 {
 nexusArtifactUploader artifacts: [
                     [
-                      artifactId: ${artifactId},
-                      classifier: ${classifier},
-                      file: ${file},
-                      type: ${type}
+                      artifactId: "${artifactId}",
+                      classifier: "${classifier}",
+                      file: "${file}",
+                      type: "${type}"
                      ]
                 ],
-                credentialsId: ${credentialsId}, 
-                groupId: ${groupId}, 
-                nexusUrl: ${nexusUrl}, 
-                nexusVersion: ${nexusVersion}, 
-                protocol: ${protocol}, 
-                repository: ${repository}, 
-                version: ${version}
+                credentialsId: "${credentialsId}", 
+                groupId: "${groupId}", 
+                nexusUrl: "${nexusUrl}", 
+                nexusVersion: "${nexusVersion}", 
+                protocol: "${protocol}", 
+                repository: "${repository}", 
+                version: "${version}"
 }
 
 // def nexus()
