@@ -10,17 +10,17 @@ def nexus(String artifactId, String classifier, String file, String type, String
 {
 nexusArtifactUploader artifacts: [
                     [
-                     artifactId: 'spring-boot-thymeleaf',
-                     classifier: '',
-                     file: '/var/lib/jenkins/.m2/repository/pl/codeleak/demos/sbt/spring-boot-thymeleaf/2.0.0/spring-boot-thymeleaf-2.0.0.war',
-                     type: 'war'
+                      artifactId: ${artifactId},
+                      classifier: ${classifier},
+                      file: ${file},
+                      type: ${type}
                      ]
                 ],
-                credentialsId: 'nexus', 
-                groupId: 'pl.codeleak.demos.sbt', 
-                nexusUrl: '13.233.100.229:8081', 
-                nexusVersion: 'nexus3', 
-                protocol: 'http', 
-                repository: 'ansible', 
-                version: '2.0.0'
+                credentialsId: ${credentialsId}, 
+                groupId: ${groupId}, 
+                nexusUrl: ${nexusUrl}, 
+                nexusVersion: ${nexusVersion}, 
+                protocol: ${protocol}, 
+                repository: ${repository}, 
+                version: ${version}
 }
