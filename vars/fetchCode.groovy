@@ -3,7 +3,6 @@ def fetchCode(){
 }
 
 
-def Git_Fetch()
-{
+def Git_Fetch(){
  git url: "https://github.com/krishnaprasadkeerthi/Ansible-Demo.git"
 }
